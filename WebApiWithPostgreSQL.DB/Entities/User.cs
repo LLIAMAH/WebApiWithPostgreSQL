@@ -7,8 +7,8 @@ namespace WebApiWithPostgreSQL.DB.Entities
         [Key]
         public long Id { get; set; }
         [Required, MaxLength(256)]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
         [Required, MaxLength(512)]
-        public string Email { get; set; }
+        public string Email { get; set; } = string.Empty;
     }
 }
